@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 // Import components
-import IssueData from './components/components.js';
+import IssueData from './forminput/forminput.js';
 
 function App() {
   return (
