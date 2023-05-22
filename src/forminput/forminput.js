@@ -1,6 +1,9 @@
-import React from 'react';
+import {React, useState} from 'react';
+
 
 const IssueData = () => {
+    const [inputForm, setInputForm] = useState('')
+
 
     return(
         <div>
