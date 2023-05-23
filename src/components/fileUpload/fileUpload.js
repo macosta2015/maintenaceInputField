@@ -4,8 +4,8 @@ import Button from '@mui/material/Button';
 const FileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
 
-  const handleFileChange = (event) => {
-    setSelectedFile(event.target.files[0]);
+  const handleFileChange = (e) => {
+    setSelectedFile(e.target.files[0]);
   };
 
   const handleUpload = () => {
@@ -24,7 +24,7 @@ const FileUpload = () => {
       />
       <label htmlFor="upload-button">
         <Button variant="contained" component="span">
-          Select File
+          SELECT PHOTO
         </Button>
       </label>
       <Button variant="contained" onClick={handleUpload} disabled={!selectedFile}>
