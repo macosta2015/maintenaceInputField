@@ -1,10 +1,9 @@
 import './App.css';
 
 // Import components
-import IssueData from './components/forminput/forminput.js';
+import IssueData from './components/formInput/forminput.js';
 import ResPerson from './components/resPerson/resPerson.js';
 import RowAndColumnSpacing from './components/row&Columns/Row&Columns.js';
-
 
 
 

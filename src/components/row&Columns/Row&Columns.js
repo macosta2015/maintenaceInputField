@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 //CSS
 import './Row&Columns.css'
 // Components
-import IssueData from '../forminput/forminput.js'
+import IssueData from '../formInput/forminput.js'
 import ResPerson from '../resPerson/resPerson.js';
 import AreaInfo from '../areaInfo/areaInfo.js'
 
