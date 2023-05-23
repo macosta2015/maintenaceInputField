@@ -11,7 +11,6 @@ import RowAndColumnSpacing from './components/row&Columns/Row&Columns.js';
 function App() {
   return (
     <div className="App">
-      Hello World
       <RowAndColumnSpacing/>
       <IssueData/>
       {/* <ResPerson/> */}

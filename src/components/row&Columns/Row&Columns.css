@@ -4,10 +4,15 @@
   height: 100vh;
   border-radius: 10px;
   background-color: #9bbedd;
+  display: grid;
+
 }
 
 .father-grid{
   padding-left: 1%;
   padding-right: 1%;
-  display: grid;
+}
+
+.my-grid-item {
+  padding-top: 5%; /* Adjust the value as needed */
 }
