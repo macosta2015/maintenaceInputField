@@ -8,9 +8,10 @@ import Typography from '@mui/material/Typography';
 //CSS
 import './Row&Columns.css'
 // Components
-import IssueData from '../formInput/forminput.js'
+import IssueData from '../formInput/formInput.js'
 import ResPerson from '../resPerson/resPerson.js';
 import AreaInfo from '../areaInfo/areaInfo.js'
+import FileUpload from '../fileUpload/fileUpload.js'
 
 
 const message = `Fill up the information asked: `;
@@ -43,7 +44,7 @@ export default function RowAndColumnSpacing() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6} xl={12} >
                   <Item>
-                    <ResPerson/>
+                  <FileUpload/>
                   </Item>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6} xl={12} sx={{ display: { xs: 'none', md: 'block' } }} >
