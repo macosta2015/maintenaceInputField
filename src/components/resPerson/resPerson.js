@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const ResPerson = () => {
-    const [formData, setformData] = useState([])
+    const [formData, setformData] = useState({name:"", email:"", })
 
     function onChangeFunction(e){
         setformData(e.target.value)
