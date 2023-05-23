@@ -10,7 +10,7 @@ const IssueData = () => {
     return(
         <div>
             <p>
-                We are in the IssueData
+                Which area are you on?
             </p>
             <input
             type="text"

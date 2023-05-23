@@ -9,6 +9,9 @@ import Typography from '@mui/material/Typography';
 import './Row&Columns.css'
 // Components
 import IssueData from '../forminput/forminput.js'
+import ResPerson from '../resPerson/resPerson';
+
+
 const message = `Fill up the information asked: `;
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -22,7 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function RowAndColumnSpacing() {
     return (
         <div className="grid-container">
-              <Grid container className="father-grid"rowSpacing={'15%'} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+              <Grid container className="father-grid"rowSpacing={'0%'} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                     <div className="my-grid-item">
                         <Item>
@@ -33,7 +36,9 @@ export default function RowAndColumnSpacing() {
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6} xl={12} >
-                  <Item>2</Item>
+                  <Item>
+                      <ResPerson/>
+                  </Item>
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={6} xl={12} >
                   <Item>
