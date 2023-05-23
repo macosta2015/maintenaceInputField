@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       Hello World
-      <IssueData/>
+      {/* <IssueData/> */}
       <ResPerson/>
     </div>
   );

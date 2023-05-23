@@ -1,13 +1,15 @@
 import {React, useState} from 'react';
-import Button from '@mui/material/Button';
-
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 const ResPerson = () => {
-    const [inputForm, setInputForm] = useState([])
+    const [formData, setformData] = useState([])
 
     function onChangeFunction(e){
-        console.log('Hello World');
-        setInputForm(e.target.value)
+        setformData(e.target.value)
     }
 
     return(
@@ -17,12 +19,12 @@ const ResPerson = () => {
             </p>
             <input
             type="text"
-            value={inputForm}
+            value={formData}
             onChange={onChangeFunction}
             >
             </input>
             <p>
-            The value is {inputForm} !
+            The value is {formData} !
             </p>
         </div>
     )
