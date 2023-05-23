@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
-import { useState} from 'react';
-
-
 // Import components
-import IssueData from './forminput/forminput.js';
+import IssueData from './components/forminput/forminput.js';
+import workerInput from './components/forminput/forminput.js';
+
 
 function App() {
   return (

@@ -1,11 +1,13 @@
 import {React, useState} from 'react';
-
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import PopupState, { bindTrigger, bindMenu } from 'material-ui-popup-state';
 
 
 const IssueData = () => {
     const [inputForm, setInputForm] = useState([])
-    const [formData, setformFData] = useState({name: "", email: "", message: ""});
-
+    const [formData, setformData] = useState({name: "", email: "", message: ""});
 
 
     function onChangeFunction(e){
