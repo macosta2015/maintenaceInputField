@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -6,27 +6,60 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 const ResPerson = () => {
-    const [formData, setformData] = useState({name:"", email:"", })
+    const [formData, setFormData] = useState({name: "",email: "",message: ""});
 
-    function onChangeFunction(e){
-        setformData(e.target.value)
-    }
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+      };
+
+
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`Name: ${formData.name}, Email: ${formData.email}, Message: ${formData.message}`
+        );
+    };
+    
 
     return(
-        <div>
+        <form onSubmit={handleSubmit}>
             <p>
                 We are in the IssueData
             </p>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                value={formData.name} 
+                onChange={handleChange}
+            />
+
             <input
-            type="text"
-            value={formData}
-            onChange={onChangeFunction}
-            >
-            </input>
+                type="text"
+                id="email"
+                name="email" 
+                value={formData.email} 
+                onChange={handleChange}
+            />
+
+            <input
+                type="text"
+                id="message"
+                name="message" 
+                value={formData.message} 
+                onChange={handleChange}
+            />
+
             <p>
-            The value is {formData} !
+            The name is {formData.name} !
             </p>
-        </div>
+            <p>
+            The email is {formData.email} !
+            </p>
+            <p>
+            The message is {formData.message} !
+            </p>
+        </form>
     )
 };
 
