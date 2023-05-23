@@ -24,7 +24,7 @@ const ResPerson = () => {
     return(
         <form onSubmit={handleSubmit}>
             <p>
-                We are in the IssueData
+                Area and name of Employee
             </p>
             <input 
                 type="text" 
