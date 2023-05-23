@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       Hello World
       <RowAndColumnSpacing/>
-      {/* <IssueData/> */}
+      <IssueData/>
       {/* <ResPerson/> */}
     </div>
   );

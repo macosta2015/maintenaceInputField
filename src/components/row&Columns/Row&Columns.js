@@ -5,7 +5,11 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+//CSS
 import './Row&Columns.css'
+// Components
+import IssueData from '../forminput/forminput.js'
+
 
 const message = `Truncation should be conditionally applicable on this long line of text
  as this is a much longer line than what the container can support.
@@ -37,7 +41,7 @@ export default function RowAndColumnSpacing() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={4} lg={3} xl={6} >
                   <Item>
-                    Hello
+                    <IssueData/>
                   </Item>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4} lg={3} xl={6} sx={{ display: { xs: 'none', md: 'block' } }} >
