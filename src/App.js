@@ -2,8 +2,7 @@ import './App.css';
 
 // Import components
 import IssueData from './components/forminput/forminput.js';
-import workerInput from './components/forminput/forminput.js';
-import ResPerson from './components/responsablePerson/responsablePerson.js';
+import ResPerson from './components/resPerson/resPerson.js';
 
 
 
@@ -12,6 +11,7 @@ function App() {
     <div className="App">
       Hello World
       <IssueData/>
+      <ResPerson/>
     </div>
   );
 }
