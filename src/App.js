@@ -6,11 +6,12 @@ import ResPerson from './components/resPerson/resPerson.js';
 import RowAndColumnSpacing from './components/row&Columns/Row&Columns.js';
 import FileUpload from './components/fileUpload/fileUpload.js'
 
+
 function App() {
   return (
     <div className="App">
-      <RowAndColumnSpacing/>
-      <IssueData/>
+      <RowAndColumnSpacing />
+      <IssueData />
       {/* <ResPerson/> */}
     </div>
   );
