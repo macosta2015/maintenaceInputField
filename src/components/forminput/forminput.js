@@ -1,25 +1,24 @@
-import {React, useState} from 'react';
-
+import { React, useState } from 'react';
 
 const IssueData = () => {
     const [inputForm, setInputForm] = useState([])
-    function onChangeFunction(e){
+    function onChangeFunction(e) {
         console.log('Hello World');
         setInputForm(e.target.value)
     }
-    return(
+    return (
         <div>
             <p>
                 Which area are you on?
             </p>
             <input
-            type="text"
-            value={inputForm}
-            onChange={onChangeFunction}
+                type="text"
+                value={inputForm}
+                onChange={onChangeFunction}
             >
             </input>
             <p>
-            The value is {inputForm} !
+                The value is {inputForm} !
             </p>
         </div>
     )
