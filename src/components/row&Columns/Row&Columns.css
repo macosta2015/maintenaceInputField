@@ -8,12 +8,14 @@
 
 }
 
-.father-grid{
+.father-grid {
+  /* height: 50vh; */
+  height: 40%;
   border-radius: 50px;
   padding-left: 5%;
   padding-right: 5%;
 }
 
 .my-grid-item {
-  padding-top: 2.5%; 
+  padding-top: 2.5%;
 }

@@ -26,7 +26,9 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function RowAndColumnSpacing() {
   return (
     <div className="grid-container">
-      <Grid container className="father-grid" rowSpacing={'0%'} columnSpacing={{ xs: -5, sm: -5, md: -5 }}>
+      {/* <Grid container className="father-grid" rowSpacing={'0%'} columnSpacing={{ xs: -5, sm: -5, md: -5 }}> */}
+      {/* <Grid container className="father-grid" rowSpacing={'-0%'} columnSpacing={'0%'}> */}
+      <Grid container className="father-grid" rowSpacing="auto" columnSpacing={'0%'}>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <div className="my-grid-item">
             <Item>
@@ -36,23 +38,23 @@ export default function RowAndColumnSpacing() {
             </Item>
           </div>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={12} >
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
           <Item>
             <AreaInfo />
           </Item>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={12} >
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
           <Item>
             <FileUpload />
           </Item>
         </Grid>
-        <Grid item xs={12} sm={12} md={12} lg={6} xl={12} sx={{ display: { xs: 'none', md: 'block' } }} >
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{ display: { xs: 'none', md: 'block' } }} >
           <Item>
             <IssueData />
           </Item>
         </Grid>
       </Grid>
-    </div>
+    </div >
 
   );
 }
