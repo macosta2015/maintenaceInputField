@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <RowAndColumnSpacing />
-      <IssueData />
+      {/* <IssueData /> */}
       {/* <ResPerson/> */}
     </div>
   );
