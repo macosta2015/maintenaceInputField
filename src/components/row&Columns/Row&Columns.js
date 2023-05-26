@@ -26,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function RowAndColumnSpacing() {
   return (
     <div className="grid-container">
-      <Grid container className="father-grid" rowSpacing={'0%'} columnSpacing={{ xs: 0, sm: 0, md: 0 }}>
+      <Grid container className="father-grid" rowSpacing={'0%'} columnSpacing={{ xs: -5, sm: -5, md: -5 }}>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <div className="my-grid-item">
             <Item>
