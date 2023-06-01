@@ -13,10 +13,8 @@ import MyForm from './components/useForm/useForm.js';
 function App() {
   return (
     <div className="App">
-
       {/* <RowAndColumnSpacing /> */}
       <MyForm />
-
       {/* <IssueData /> */}
       {/* <ResPerson/> */}
     </div>

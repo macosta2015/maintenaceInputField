@@ -1,0 +1,25 @@
+.grid-container {
+    border-style: solid;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    background-color: #9bbedd;
+    display: grid;
+
+}
+
+.father-grid {
+    /* height: 50vh; */
+    /* height: 40%; */
+    /* border-radius: 50px; */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.my-grid-item {
+    padding-top: 2.5%;
+}
+
+.children-grid {
+    font-family: monospace;
+}

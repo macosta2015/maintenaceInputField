@@ -2,14 +2,12 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 //CSS
 import './Row&Columns.css'
 // Components
 import IssueData from '../formInput/formInput.js'
-import ResPerson from '../resPerson/resPerson.js';
 import AreaInfo from '../areaInfo/areaInfo.js'
 import FileUpload from '../fileUpload/fileUpload.js'
 
