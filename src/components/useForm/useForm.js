@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 //CSS
 import './useForm.css'
 
-
 const message = `Fill out Information: `;
 
 
