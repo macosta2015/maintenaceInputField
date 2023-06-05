@@ -7,9 +7,7 @@ import Typography from '@mui/material/Typography';
 
 //CSS
 import './useForm.css'
-
 const message = `Fill out Information: `;
-
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
