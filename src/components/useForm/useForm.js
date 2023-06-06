@@ -16,7 +16,6 @@ const Item = styled(Paper)(({ theme }) => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
     width: '100%', // Set width to 100%
-
 }));
 
 const MyForm = () => {
